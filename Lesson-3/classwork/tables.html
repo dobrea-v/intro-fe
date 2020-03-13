@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <style>
+        table {
+            width: 100%;
+        }
+        table, td, th {
+           border: 1px solid #000;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,6 +24,28 @@
     </p>
     <div>
         <h2>Result:</h2>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Sharma</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Arun</td>
+                <td>Singh</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>Watson</td>
+                <td>24</td>
+            </tr>
+        </table>
     </div>
     <hr />
     <h2>
@@ -26,6 +56,17 @@
     </p>
     <div>
         <h2>Result:</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td>Vikas Rawat</td>
+                <td>32423423232</td>
+                <td>54654645564</td>
+            </tr>
+        </table>
     </div>
     <hr />
     <h2>
@@ -36,6 +77,20 @@
     </p>
     <div>
         <h2>Result:</h2>
+        <table>
+            <caption>Caption in work</caption>
+            <tr>
+                <th>Name:</th>
+                <th>Vikas Rawat</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Telephone:</td>
+                <td>23242343242</td>
+            </tr>
+            <tr>
+                <td>23312321312</td>
+            </tr>
+        </table>
     </div>
     <hr />
 </body>
