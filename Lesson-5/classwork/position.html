@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 300px;
+        }
+        .box-1 {
+            background-color: aqua;
+        }
+        .box-2 {
+            background-color: brown;
+            position: relative;
+            top: 10px;
+        }
+        .box-3 {
+            background-color: darkblue;
+        }
+        .box-4 {
+            background-color: violet;
+        }
+        .box-5 {
+            background-color: teal;
+        }
+        .small-box {
+            position: fixed;
+            bottom: 20px;
+            right: 40px;
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's talk about position</h1>
+    <div class="box box-1">
+        Hi, i am box 1
+    </div>
+    <div class="box box-2">
+        Hi, i am box 2
+        <div class="small-box">
+            Hi, i am small box!
+        </div>
+    </div>
+    <div class="box box-3">
+        Another one, it's 3
+    </div>
+    <div class="box box-4">
+        Another one, it's 3
+    </div>
+    <div class="box box-5">
+        Another one, it's 3
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+table {
+    border-top: 1px solid blueviolet;
+    border-bottom: 1px solid blueviolet;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 5px;
+}
+
+tr :nth-child(2),
+tr :nth-child(3) {
+    text-align: right;
+}
+
+tr {
+    text-align: left;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #eaeaea;
+}
+
+tfoot {
+    border-top: 1px solid blueviolet;
+}
+
+tfoot > tr > th  {
+    text-align: right;
+}
