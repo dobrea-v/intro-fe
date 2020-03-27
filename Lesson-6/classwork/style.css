@@ -1,0 +1,67 @@
+/** Example of reseting CSS **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Basic configuration **/
+
+header {
+    border: 3px solid #b70f0a;
+    background-color: #ff8351;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top:0;
+} 
+   
+.hero-block {
+    /** I have some default from task **/
+    position: relative;
+    height: 350px;
+    width: 100%;
+    border: 3px solid #355723;
+    background-color: #dfedd6;
+    margin-top: 50px;
+}
+
+.login-form {
+    background-color: white;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+
+}
+
+main {
+    height: 500px;
+    width: 100%;
+    border: 3px solid #0844a4;
+    background-color: #c9f1fd;
+    display: flex;
+    flex-flow: column;
+}
+
+.article-group {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    border: 3px solid #9c29b7;
+    background-color: #9c29b7;
+    width: 40%;
+    height: 250px;
+    display: inline-block;
+}
+
+footer {
+    border: 3px solid #553d0d;
+    background-color: #ffc957;
+}
