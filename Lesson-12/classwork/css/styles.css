@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.section {
+  padding: 50px; }
+  .section__title {
+    padding: 40px;
+    font-size: 24px; }
+    .section__title--danger {
+      color: red; }
+  .section__content {
+    padding: 10px;
+    font-size: 14px; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%; }
+
+[class*="col-"] {
+  width: 100%;
+  border: 1px solid #000; }
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 7.41667%;
+    border: 1px solid #000; }
+  .col-md-2 {
+    width: 15.83333%;
+    border: 1px solid #000; }
+  .col-md-3 {
+    width: 24.25%;
+    border: 1px solid #000; }
+  .col-md-4 {
+    width: 32.66667%;
+    border: 1px solid #000; }
+  .col-md-5 {
+    width: 41.08333%;
+    border: 1px solid #000; }
+  .col-md-6 {
+    width: 49.5%;
+    border: 1px solid #000; }
+  .col-md-7 {
+    width: 57.91667%;
+    border: 1px solid #000; }
+  .col-md-8 {
+    width: 66.33333%;
+    border: 1px solid #000; }
+  .col-md-9 {
+    width: 74.75%;
+    border: 1px solid #000; }
+  .col-md-10 {
+    width: 83.16667%;
+    border: 1px solid #000; }
+  .col-md-11 {
+    width: 91.58333%;
+    border: 1px solid #000; }
+  .col-md-12 {
+    width: 100%;
+    border: 1px solid #000; } }
+
+@media (min-width: 1024px) {
+  .col-lg-1 {
+    width: 7.41667%;
+    border: 1px solid #000; }
+  .col-lg-2 {
+    width: 15.83333%;
+    border: 1px solid #000; }
+  .col-lg-3 {
+    width: 24.25%;
+    border: 1px solid #000; }
+  .col-lg-4 {
+    width: 32.66667%;
+    border: 1px solid #000; }
+  .col-lg-5 {
+    width: 41.08333%;
+    border: 1px solid #000; }
+  .col-lg-6 {
+    width: 49.5%;
+    border: 1px solid #000; }
+  .col-lg-7 {
+    width: 57.91667%;
+    border: 1px solid #000; }
+  .col-lg-8 {
+    width: 66.33333%;
+    border: 1px solid #000; }
+  .col-lg-9 {
+    width: 74.75%;
+    border: 1px solid #000; }
+  .col-lg-10 {
+    width: 83.16667%;
+    border: 1px solid #000; }
+  .col-lg-11 {
+    width: 91.58333%;
+    border: 1px solid #000; }
+  .col-lg-12 {
+    width: 100%;
+    border: 1px solid #000; } }

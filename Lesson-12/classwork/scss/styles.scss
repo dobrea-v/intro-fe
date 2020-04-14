@@ -1,0 +1,33 @@
+@import '_reset';
+@import '_mixins';
+
+
+.section {
+    padding: 50px;
+    &__title {
+        padding: 40px;
+        font-size: 24px;
+        &--danger {
+            color: red;
+        }
+    }
+    &__content {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+[class*="col-"] {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+@include generate-columns-tablet();
+@include generate-columns-desktop();
