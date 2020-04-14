@@ -1,0 +1,38 @@
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin isTablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+@mixin isDesktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin generate-columns-tablet {
+    @include isTablet {
+        @include generateColumns('md')
+    }
+}
+  
+@mixin generate-columns-desktop {
+    @include isDesktop() {
+        @include generateColumns('lg')
+    }
+}
+
+@mixin generateColumns($col-type) {
+    $grid-columns: 12;
+    $grid-gutter: 1;
+    @for $i from 1 through $grid-columns {
+        .col-#{$col-type}-#{$i}{
+            $multiplier: $i / $grid-columns;
+            $width: (100 * $multiplier) - ($grid-gutter * (1 - $multiplier));
+            width: percentage($width) / 100;
+            border: 1px solid #000;
+        }
+    }
+} 
