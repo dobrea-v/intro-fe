@@ -24,7 +24,25 @@ Each lesson will have it's own folder, which will contain following files:
     - Classwork: this folder will contain class excersises
     - Homework: this folder will contain practical homework task, as long with some hint to accomplish HW task.
   
-
 ## Course Structure
-- [Lesson 1: Introduction. HTML](/Lesson-1/lesson-1.md#lesson-1-introduction-html) 
-- [Lesson 2: HTML. Building Blocks](Lesson-2/lesson-2.md#lesson-2-html-building-blocks)
+
+- [Lesson 1: Introduction. HTML](/Lesson-1/README.md#lesson-1-introduction-html)
+- [Lesson 2: HTML. Building Blocks](Lesson-2/README.md#lesson-2-html-building-blocks)
+- [Lesson 3: HTML. Base Elements](Lesson-3/README.md#lesson-3-html-base-elements)
+- [Lesson 4: CSS. Introduction](Lesson-4/README.md#lesson-4-css-introduction)
+- [Lesson 5: CSS. Introduction. Part 2](Lesson-5/README.md#lesson-5-css-introduction-part-2)
+- [Lesson 6: CSS. Layouts](Lesson-6/README.md#lesson-6-css-layouts)
+- [Lesson 7: Git. Introduction](Lesson-7/README.md#lesson-7-git-introduction)
+- [Lesson 8: Design on website. Figma](Lesson-8/README.md#lesson-8-design-on-website-figma)
+- [Lesson 9: Responsive Web Design](Lesson-9/README.md#lesson-9-responsive-web-design)
+- [Lesson 10: Client-Server Architecture. HTTP Protocol](Lesson-10/README.md#lesson-10-client-server-architecture-http-protocol)
+- [Lesson 11: Introduction to NPM. CSS Preprocessors](Lesson-11/README.md#lesson-11-introduction-to-npm-css-preprocessors)
+- [Lesson 12: Methods to organize CSS. Breaking Mocks](Lesson-12/README.md#lesson-12-methods-to-organize-css-breaking-mocks)
+- [Lesson 13: Introduction to Javascript](Lesson-13/README.md#lesson-13-introduction-to-javascript)
+- [Lesson 14: Operators. Conditional Operators](Lesson-14/README.md#lesson-14-operators-conditional-operators)
+- [Lesson 15: Logical Operators. Loops](Lesson-15/README.md#lesson-15-logical-operators-loops)
+- [Lesson 15: Logical Operators. Loops](Lesson-15/README.md#lesson-15-logical-operators-loops)
+- [Lesson 16: Functions](Lesson-16/README.md#lesson-16-functions)
+- [Lesson 17: Objects and Arrays](Lesson-17/README.md#lesson-17-objects-and-arrays)
+- [Lesson 18: DOM Manipulations](Lesson-18/README.md#lesson-18-dom-manipulations)
+- [Lesson 19: Browser Events](Lesson-19/README.md#lesson-19-browser-events)
