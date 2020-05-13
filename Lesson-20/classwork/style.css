@@ -1,0 +1,60 @@
+.container {
+    margin: 0 auto;
+    width: 500px;
+}
+h1 {
+    text-align: center;
+}
+.todo-component {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 0 20px;
+}
+.todo-component__control {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.todo-component__control input {
+    width: 100%;
+    height: 32px;
+    border-color: #eaeaea;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.todo-component__control button {
+    height: 32px;
+    width: 64px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+.todolist {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+}
+.todolist__item {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #eaeaea;
+    border: 1px solid grey;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.todolist__item input[type='checkbox'], .todolist__item button {
+    margin: 0 10px;
+}
+
+.todolist__item span {
+    width: 100%;
+}
+.complete {
+    border: 2px solid green;
+}
