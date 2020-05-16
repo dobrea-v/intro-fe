@@ -11,7 +11,12 @@
         <h1>Our awesome TODO</h1>
         <div class="todo-component">
             <div class="todo-component__control">
-                <input type="text" id="todo-input" placeholder="Add todo">
+                <div class="todo-component__input-group">
+                    <input type="text" id="todo-input" placeholder="Add todo">
+                    <span id="input-count"></span>
+                    <span id="total"></span>
+                    <span id="total-done"></span>
+                </div>
                 <button id="todo-add" >Add</button>
             </div>
             <ul class="todolist" id="todolist"></ul>
