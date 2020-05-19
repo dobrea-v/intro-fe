@@ -3,6 +3,10 @@ const addButton = document.getElementById('todo-add');
 const todoList = document.getElementById('todolist');
 const inputCount = document.getElementById('input-count');
 
+let tempStorage = getTodosFromLocalStorage();
+tempStorage === null ? tempStorage = [] : tempStorage;
+setTodosToLocalStorage(tempStorage);
+
 addButton.addEventListener('click', addItemToList);
 todoList.addEventListener('click', handleItemClick);
 todoInput.addEventListener('keydown', handleInputCount);
@@ -27,9 +31,12 @@ function handleItemClick(event) {
     }
 }
 
+for (let i = 0; i < tempStorage.length; i++) {
+    addItemToList(tempStorage[i].text, tempStorage[i].status)
+}
 
-function addItemToList() {
-    if(!todoInput.value) return;
+function addItemToList(text, status = false) {
+    if(!todoInput.value && !text) return;
 
     const listItem = document.createElement('li');
     const listItemRemoveBtn = document.createElement('button');
@@ -39,23 +46,27 @@ function addItemToList() {
     listItem.classList.add('todolist__item');
 
     listItemRemoveBtn.innerText = 'x';
-    // added this meta attributes
     listItemRemoveBtn.setAttribute('data-action', 'remove');
-    listTextSpan.innerText = todoInput.value;
+    if (todoInput.value) {
+        listTextSpan.innerText = todoInput.value;
+    } else {
+        listTextSpan.innerText = text;
+    }
     listCheckboxStatus.type = 'checkbox';
-    // added this meta attributes
+    listCheckboxStatus.checked = status;
     listCheckboxStatus.setAttribute('data-action', 'status')
 
     listItem.append(listCheckboxStatus)
     listItem.append(listTextSpan)
     listItem.append(listItemRemoveBtn)
 
-    // Adding new item
-    // 1. get todos from localStorage
-    // 2. parse todos
-    // 3. todos.push({ text: 'some   text', status: 'NOT' })
-    // 4. json.stringify todos
-    // 5. localStorage.setItem('todos', todos);
+    let tempStorage = getTodosFromLocalStorage();
+    tempStorage.push({
+        id: tempStorage.length,
+        text: todoInput.value,
+        status: false,
+    })
+    setTodosToLocalStorage(tempStorage);
     
     todoInput.value = '';
     inputCount.innerText = '';
@@ -75,23 +86,23 @@ function addItemToList() {
 // To remove item you first need to get localStorage object
 // Then you need to find(you will need to iterate through array) item in array and remove it.
 
-const products = [
-    {
-        name: 'Apple',
-        price: 10
-    },
-    {
-        name: 'Orages',
-        price: 40
-    },
-    {
-        name: 'Milk',
-        price: 20
-    },
-]
+// const products = [
+//     {
+//         name: 'Apple',
+//         price: 10
+//     },
+//     {
+//         name: 'Orages',
+//         price: 40
+//     },
+//     {
+//         name: 'Milk',
+//         price: 20
+//     },
+// ]
 
-localStorage.setItem('products', JSON.stringify(products));
-console.log(JSON.parse(localStorage.getItem('products'))[0]);
+// localStorage.setItem('products', JSON.stringify(products));
+// console.log(JSON.parse(localStorage.getItem('products'))[0]);
 
 
 
@@ -134,3 +145,12 @@ console.log(JSON.parse(localStorage.getItem('products'))[0]);
 //         event.target.closest('li').classList.toggle('complete');
 //     }
 // }
+
+// Helper functions 
+
+function getTodosFromLocalStorage() {
+    return JSON.parse(localStorage.getItem('todos'))
+}
+function setTodosToLocalStorage(todos) {
+    localStorage.setItem('todos', JSON.stringify(todos))
+}
