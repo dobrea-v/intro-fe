@@ -47,3 +47,4 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 19: Browser Events](Lesson-19/README.md#lesson-19-browser-events)
 - [Lesson 20: Practicing with Events and DOM](Lesson-20/README.md#lesson-20-practicing-with-events-and-dom)
 - [Lesson 21: Storing Data on Client Side](Lesson-21/README.md#lesson-21-storing-data-on-client-side)
+- [Lesson 22: Linting Javascript](Lesson-21/README.md#lesson-22-linting-javascript)
