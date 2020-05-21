@@ -154,3 +154,4 @@ function getTodosFromLocalStorage() {
 function setTodosToLocalStorage(todos) {
     localStorage.setItem('todos', JSON.stringify(todos))
 }
+
