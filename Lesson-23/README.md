@@ -1,0 +1,11 @@
+# Lesson 23: Refactoring
+
+## Check PDF for material information
+
+## Homework
+
+1. Finishing implementing Todo list app
+2. Refactor existing function. Separate logic
+3. Add linters to project
+4. Add SCSS and customize project
+5. Deploy to Netlify
