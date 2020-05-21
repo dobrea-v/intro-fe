@@ -1,4 +1,4 @@
-# Lesson 23: Refactoring
+# Lesson 23: Refactoring of Todo List App
 
 ## Check PDF for material information
 

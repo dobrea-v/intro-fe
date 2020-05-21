@@ -48,3 +48,4 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 20: Practicing with Events and DOM](Lesson-20/README.md#lesson-20-practicing-with-events-and-dom)
 - [Lesson 21: Storing Data on Client Side](Lesson-21/README.md#lesson-21-storing-data-on-client-side)
 - [Lesson 22: Linting Javascript](Lesson-22/README.md#lesson-22-linting-javascript)
+- [Lesson 23: Refactoring of Todo List App](Lesson-23/README.md#lesson-23-refactoring-of-todo-list-app)
