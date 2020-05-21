@@ -7,14 +7,14 @@ let tempStorage = getTodosFromLocalStorage();
 tempStorage === null ? tempStorage = [] : tempStorage;
 setTodosToLocalStorage(tempStorage);
 
-addButton.addEventListener('click', addItemToList);
+addButton.addEventListener('click', handleAddTodoItem);
 todoList.addEventListener('click', handleItemClick);
 todoInput.addEventListener('keydown', handleInputCount);
 
 function handleInputCount(event) {
     const count = event.target.value.length;
 
-    if(count === 0) {
+    if (count === 0) {
         inputCount.innerText = '';
         return;
     }
@@ -23,56 +23,72 @@ function handleInputCount(event) {
 }
 
 function handleItemClick(event) {
-    if(event.target.dataset.action === 'remove') {
+    let tempStorage = getTodosFromLocalStorage();
+    const itemId = parseInt(event.target.closest('li').dataset.todoid);
+    if (event.target.dataset.action === 'remove') {
+        let newStorageArray = [];
+        for (let i = 0; i < tempStorage.length; i++) {
+            if (itemId !== tempStorage[i].id) {
+                newStorageArray.push(tempStorage[i]);
+            }
+        }
+        setTodosToLocalStorage(newStorageArray);
         event.target.closest('li').remove();
     }
-    if(event.target.dataset.action === 'status') {
+    if (event.target.dataset.action === 'status') {
+        let newStorageArray = [];
+        for (let i = 0; i < tempStorage.length; i++) {
+            if (itemId === tempStorage[i].id) {
+                tempStorage[i].status = !tempStorage[i].status;
+            }
+            newStorageArray.push(tempStorage[i]);
+        }
+        setTodosToLocalStorage(newStorageArray);
         event.target.closest('li').classList.toggle('complete');
     }
 }
 
 for (let i = 0; i < tempStorage.length; i++) {
-    addItemToList(tempStorage[i].text, tempStorage[i].status)
+    renderTodoItem(tempStorage[i].text, tempStorage[i].status, tempStorage[i].id);
 }
 
-function addItemToList(text, status = false) {
-    if(!todoInput.value && !text) return;
+function handleAddTodoItem() {
+    let tempStorage = getTodosFromLocalStorage();
+    let id = tempStorage.length;
 
+    tempStorage.push({
+        id: id,
+        text: todoInput.value,
+        status: false,
+    })
+    setTodosToLocalStorage(tempStorage);
+    renderTodoItem(todoInput.value, false, id);
+    todoInput.value = '';
+    inputCount.innerText = '';
+}
+
+function renderTodoItem(text, status, id) {
     const listItem = document.createElement('li');
     const listItemRemoveBtn = document.createElement('button');
     const listCheckboxStatus = document.createElement('input');
     const listTextSpan = document.createElement('span');
-
     listItem.classList.add('todolist__item');
-
     listItemRemoveBtn.innerText = 'x';
     listItemRemoveBtn.setAttribute('data-action', 'remove');
-    if (todoInput.value) {
-        listTextSpan.innerText = todoInput.value;
-    } else {
-        listTextSpan.innerText = text;
-    }
+    listTextSpan.innerText = text;
     listCheckboxStatus.type = 'checkbox';
     listCheckboxStatus.checked = status;
+    if (status) {
+        listItem.classList.add('complete');
+    }
     listCheckboxStatus.setAttribute('data-action', 'status')
 
     listItem.append(listCheckboxStatus)
     listItem.append(listTextSpan)
     listItem.append(listItemRemoveBtn)
-
-    let tempStorage = getTodosFromLocalStorage();
-    tempStorage.push({
-        id: tempStorage.length,
-        text: todoInput.value,
-        status: false,
-    })
-    setTodosToLocalStorage(tempStorage);
-    
-    todoInput.value = '';
-    inputCount.innerText = '';
+    listItem.setAttribute('data-todoid', id);
     todoList.append(listItem);
 }
-
 
 
 // Helper functions 
