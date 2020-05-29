@@ -99,3 +99,29 @@ function setTodosToLocalStorage(todos) {
     localStorage.setItem('todos', JSON.stringify(todos))
 }
 
+
+const fetchExample = new Promise(function(resolve, reject){
+    console.log('Fetching....')
+    setTimeout(() => {
+        resolve('Here is your request data')
+    }, 2000)
+    let noResult = true;
+    if(noResult) {
+        reject('Error here')
+    }
+})
+
+fetchExample
+.then((result) => {
+    console.log(result)
+    return 1 + 3
+})
+.then((result) => {
+    console.log(result)
+    return result * 10
+})
+.then((result) => {
+    console.log('Final Result', result)
+})
+.catch((error) => alert(error))
+.finally(() => console.log('Finaly we are done'))

@@ -49,3 +49,4 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 21: Storing Data on Client Side](Lesson-21/README.md#lesson-21-storing-data-on-client-side)
 - [Lesson 22: Linting Javascript](Lesson-22/README.md#lesson-22-linting-javascript)
 - [Lesson 23: Refactoring of Todo List App](Lesson-23/README.md#lesson-23-refactoring-of-todo-list-app)
+- [Lesson 24: Lesson 24: Async JavaScript](Lesson-24/README.md#lesson-24-async-javascript)
