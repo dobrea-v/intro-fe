@@ -1,5 +1,7 @@
 # A Introductory course to frontend development
-👨‍🏫 📚🤓 👩‍💻👨‍💻 
+
+👨‍🏫 📚🤓 👩‍💻👨‍💻
+
 ## A series of 44 lessons prepared for SkillUp 'Introduction to Frontend' course
 
 In this course we will cover ba-sic building blocs of web pages, will practice and learn different layout approaches, will play with CSS and will check moder tools for dealing with CSS. With basic knowledge of HTML and CSS we will head to learning JavaScript. We will go from basics concepts such as variables, cycles, flow control, functions to a more advanced concepts. To help us understand JS we will have a wide range of excersises and also we will enreach the UI/UX of our WeatherApp project.
@@ -49,4 +51,5 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 21: Storing Data on Client Side](Lesson-21/README.md#lesson-21-storing-data-on-client-side)
 - [Lesson 22: Linting Javascript](Lesson-22/README.md#lesson-22-linting-javascript)
 - [Lesson 23: Refactoring of Todo List App](Lesson-23/README.md#lesson-23-refactoring-of-todo-list-app)
-- [Lesson 24: Lesson 24: Async JavaScript](Lesson-24/README.md#lesson-24-async-javascript)
+- [Lesson 24: Async JavaScript](Lesson-24/README.md#lesson-24-async-javascript)
+- [Lesson 25: Fetch](Lesson-25/README.md#lesson-25-fetch)
