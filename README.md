@@ -53,3 +53,4 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 23: Refactoring of Todo List App](Lesson-23/README.md#lesson-23-refactoring-of-todo-list-app)
 - [Lesson 24: Async JavaScript](Lesson-24/README.md#lesson-24-async-javascript)
 - [Lesson 25: Fetch](Lesson-25/README.md#lesson-25-fetch)
+- [Lesson 26: Javascript this and prototypes](Lesson-26/README.md#lesson-26-javascript-this-and-prototypes)
