@@ -55,3 +55,4 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 25: Fetch](Lesson-25/README.md#lesson-25-fetch)
 - [Lesson 26: Javascript this and prototypes](Lesson-26/README.md#lesson-26-javascript-this-and-prototypes)
 - [Lesson 27: Constructor, "new" operator](Lesson-27/README.md#lesson-27-constructor-new-operator)
+- [Lesson 28: Modules](Lesson-28/README.md#lesson-28-modules)
