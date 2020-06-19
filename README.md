@@ -58,3 +58,4 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 28: Modules](Lesson-28/README.md#lesson-28-modules)
 - [Lesson 29: Webpack](Lesson-29/README.md#lesson-29-webpack)
 - [Lesson 30: ES6](Lesson-30/README.md#lesson-30-es6)
+- [Lesson 31: Template Engines](Lesson-31/README.md#lesson-31-template-engines)
