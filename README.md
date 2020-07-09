@@ -61,3 +61,4 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 31: Template Engines](Lesson-31/README.md#lesson-31-template-engines)
 - [Lesson 34: Animations](Lesson-34/README.md#lesson-34-animations)
 - [Lesson 35: Intro to React](Lesson-35/README.md#lesson-35-intro-to-react)
+- [Lesson 35: React state and lifecycles](Lesson-36/README.md#lesson-36-react-state-and-lifecycles)
