@@ -1,4 +1,4 @@
-# Lesson 36: React state and lifecycles
+# Lesson 37: React events
 
 ## Check PDF for material information
 
