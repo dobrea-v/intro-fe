@@ -62,4 +62,5 @@ Each lesson will have it's own folder, which will contain following files:
 - [Lesson 34: Animations](Lesson-34/README.md#lesson-34-animations)
 - [Lesson 35: Intro to React](Lesson-35/README.md#lesson-35-intro-to-react)
 - [Lesson 36: React state and lifecycles](Lesson-36/README.md#lesson-36-react-state-and-lifecycles)
-- [Lesson 37: React events](Lesson-37/README.md#lesson-37-events)
+- [Lesson 37: React events](Lesson-37/README.md#lesson-37-react-events)
+- [Lesson 38: React styling](Lesson-38/README.md#lesson-38-react-styling)
